@@ -1,0 +1,8 @@
+.vs/
+packages/
+Eureka.Domain/obj/
+Eureka.Domain/bin/
+Eureka.Domain.Tests/obj/
+Eureka.Domain.Tests/bin/
+Eureka.SharedKernel/obj/
+Eureka.SharedKernel/bin/
