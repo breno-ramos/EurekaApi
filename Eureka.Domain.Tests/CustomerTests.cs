@@ -51,5 +51,19 @@ namespace Eureka.Domain.Tests
             var customer = new Customer("Eureka", customerName, document, "87marllon@gmail.com", "12345678", "minhaImagem.jpg");
             Assert.AreEqual(true, CustomerScope.CreateCustomerIsValid(customer));
         }
+
+        [TestMethod]
+        [TestCategory("Customer")]
+        public void ShouldNotCreateCustomerWhenDocumentIsInvalid()
+        {
+            var customerName = new CustomerName("Marllon", "Ramos");
+            Assert.AreEqual(true, CustomerNameScope.CustomerNameIsValid(customerName));
+
+            var document = new Document(EDocumentType.CPF, "12233399987");
+            Assert.AreEqual(false, DocumentScope.DocumentIsValid(document));
+
+            var customer = new Customer("Eureka", customerName, document, "87marllon@gmail.com", "12345678", "minhaImagem.jpg");
+            Assert.AreEqual(true, CustomerScope.CreateCustomerIsValid(customer));
+        }
     }
 }
