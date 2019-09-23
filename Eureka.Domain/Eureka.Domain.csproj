@@ -40,10 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\CustomerCommands\CreateCustomerCommand.cs" />
+    <Compile Include="Commands\CustomerCommands\UpdateCustomerCommand.cs" />
+    <Compile Include="Entities\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ICustomerRepository.cs" />
+    <Compile Include="Scopes\CustomerScope.cs" />
+    <Compile Include="Services\ICustomerApplicationService.cs" />
+    <Compile Include="Shared\Entities\Entity.cs" />
+    <Compile Include="Shared\Enums\EDocumentType.cs" />
+    <Compile Include="Shared\Enums\EStatusType.cs" />
+    <Compile Include="Shared\Scopes\CustomerNameScope.cs" />
+    <Compile Include="Shared\Scopes\DocumentScope.cs" />
+    <Compile Include="Shared\ValueObjects\CustomerName.cs" />
+    <Compile Include="Shared\ValueObjects\Document.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <ProjectReference Include="..\Eureka.SharedKernel\Eureka.SharedKernel.csproj">
+      <Project>{22698B74-619A-4173-93AD-FF992FA3FEE4}</Project>
+      <Name>Eureka.SharedKernel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Specs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
