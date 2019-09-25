@@ -40,12 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\BranchCommands\CreateBranchCommand.cs" />
     <Compile Include="Commands\CustomerCommands\CreateCustomerCommand.cs" />
     <Compile Include="Commands\CustomerCommands\UpdateCustomerCommand.cs" />
+    <Compile Include="Entities\Branch.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IBranchRepository.cs" />
     <Compile Include="Repositories\ICustomerRepository.cs" />
+    <Compile Include="Scopes\BranchScope.cs" />
     <Compile Include="Scopes\CustomerScope.cs" />
+    <Compile Include="Services\IBranchApplicationService.cs" />
     <Compile Include="Services\ICustomerApplicationService.cs" />
     <Compile Include="Shared\Entities\Entity.cs" />
     <Compile Include="Shared\Enums\EDocumentType.cs" />
