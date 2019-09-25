@@ -21,7 +21,7 @@ namespace Eureka.Domain.Tests
             Assert.AreEqual(true, DocumentScope.DocumentIsValid(document));
 
             var customer = new Customer("Eureka", customerName, document, "87marllon@gmail.com", "12345678", "minhaImagem.jpg");
-            Assert.AreEqual(true, CustomerScope.CreateCustomerIsValid(customer));
+            Assert.AreEqual(true, CustomerScope.CustomerIsValid(customer));
         }
 
         [TestMethod]
@@ -35,7 +35,7 @@ namespace Eureka.Domain.Tests
             Assert.AreEqual(true, DocumentScope.DocumentIsValid(document));
 
             var customer = new Customer("Eureka", customerName, document, "87marllon@gmail.com", "12345678", "minhaImagem.jpg");
-            Assert.AreEqual(true, CustomerScope.CreateCustomerIsValid(customer));
+            Assert.AreEqual(true, CustomerScope.CustomerIsValid(customer));
         }
 
         [TestMethod]
@@ -49,7 +49,7 @@ namespace Eureka.Domain.Tests
             Assert.AreEqual(false, DocumentScope.DocumentIsValid(document));
 
             var customer = new Customer("Eureka", customerName, document, "87marllon@gmail.com", "12345678", "minhaImagem.jpg");
-            Assert.AreEqual(true, CustomerScope.CreateCustomerIsValid(customer));
+            Assert.AreEqual(true, CustomerScope.CustomerIsValid(customer));
         }
 
         [TestMethod]
@@ -63,7 +63,7 @@ namespace Eureka.Domain.Tests
             Assert.AreEqual(false, DocumentScope.DocumentIsValid(document));
 
             var customer = new Customer("Eureka", customerName, document, "87marllon@gmail.com", "12345678", "minhaImagem.jpg");
-            Assert.AreEqual(true, CustomerScope.CreateCustomerIsValid(customer));
+            Assert.AreEqual(true, CustomerScope.CustomerIsValid(customer));
         }
     }
 }

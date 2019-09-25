@@ -38,7 +38,7 @@ namespace Eureka.Domain.Scopes
         }
 
         #region used to tests
-        public static bool CreateCustomerIsValid(this Customer customer)
+        public static bool CustomerIsValid(this Customer customer)
         {
             int result = 0;
 
