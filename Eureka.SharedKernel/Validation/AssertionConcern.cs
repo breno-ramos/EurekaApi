@@ -190,5 +190,11 @@ namespace Eureka.SharedKernel.Validation
 
             return (!isCpf) ? new DomainNotification("AssertIsCpf", message) : null;
         }
+
+        public static DomainNotification AssertArgumentNotEquals(decimal object1, decimal object2, string message)
+        {
+            return (object1.Equals(object2))
+                ? new DomainNotification("AssertArgumentNotEquals", message) : null;
+        }
     }
 }
