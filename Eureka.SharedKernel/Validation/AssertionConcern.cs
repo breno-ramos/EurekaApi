@@ -56,12 +56,6 @@ namespace Eureka.SharedKernel.Validation
                 ? new DomainNotification("AssertArgumentNotEmpty", message) : null;
         }
 
-        public static DomainNotification AssertArgumentNotEquals(object object1, object object2, string message)
-        {
-            return (object1.Equals(object2))
-                ? new DomainNotification("AssertArgumentNotEquals", message) : null;
-        }
-
         public static DomainNotification AssertArgumentNotNull(object object1, string message)
         {
             return (object1 == null)
@@ -191,7 +185,19 @@ namespace Eureka.SharedKernel.Validation
             return (!isCpf) ? new DomainNotification("AssertIsCpf", message) : null;
         }
 
+        public static DomainNotification AssertArgumentNotEquals(object object1, object object2, string message)
+        {
+            return (object1.Equals(object2))
+                ? new DomainNotification("AssertArgumentNotEquals", message) : null;
+        }
+
         public static DomainNotification AssertArgumentNotEquals(decimal object1, decimal object2, string message)
+        {
+            return (object1.Equals(object2))
+                ? new DomainNotification("AssertArgumentNotEquals", message) : null;
+        }
+
+        public static DomainNotification AssertArgumentNotEquals(int object1, int object2, string message)
         {
             return (object1.Equals(object2))
                 ? new DomainNotification("AssertArgumentNotEquals", message) : null;
