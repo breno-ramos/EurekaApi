@@ -53,6 +53,7 @@
     <Compile Include="Commands\SubscriptionCommands\UpdateSubscriptionCommand.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Branch.cs" />
+    <Compile Include="Entities\Brand.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Plan.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Repositories\ICustomerRepository.cs" />
     <Compile Include="Repositories\IPlanRepository.cs" />
     <Compile Include="Repositories\ISubscriptionRepository.cs" />
+    <Compile Include="Scopes\BrandScope.cs" />
     <Compile Include="Scopes\CategoryScope.cs" />
     <Compile Include="Scopes\AddressScope.cs" />
     <Compile Include="Scopes\PlanScope.cs" />
