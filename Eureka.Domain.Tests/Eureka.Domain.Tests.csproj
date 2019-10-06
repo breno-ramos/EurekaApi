@@ -54,6 +54,7 @@
     <Compile Include="CustomerTests.cs" />
     <Compile Include="BranchTests.cs" />
     <Compile Include="AddressTests.cs" />
+    <Compile Include="SubscriptionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
