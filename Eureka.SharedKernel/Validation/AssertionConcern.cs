@@ -86,6 +86,12 @@ namespace Eureka.SharedKernel.Validation
                 ? new DomainNotification("AssertArgumentRange", message) : null;
         }
 
+        public static DomainNotification AssertArgumentRange(decimal value, decimal minimum, decimal maximum, string message)
+        {
+            return (value < minimum || value > maximum)
+                ? new DomainNotification("AssertArgumentRange", message) : null;
+        }
+
         public static DomainNotification AssertArgumentTrue(bool boolValue, string message)
         {
             return (!boolValue)
@@ -201,6 +207,12 @@ namespace Eureka.SharedKernel.Validation
         {
             return (object1.Equals(object2))
                 ? new DomainNotification("AssertArgumentNotEquals", message) : null;
+        }
+
+        public static DomainNotification AssertArgumentLessThanOrEquals(decimal value, decimal minimum, string message)
+        {
+            return (value <= minimum)
+                ? new DomainNotification("AssertArgumentRange", message) : null;
         }
     }
 }
