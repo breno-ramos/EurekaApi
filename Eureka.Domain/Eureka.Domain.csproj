@@ -51,6 +51,8 @@
     <Compile Include="Commands\CustomerCommands\UpdateCustomerCommand.cs" />
     <Compile Include="Commands\PlanCommands\CreatePlanCommand.cs" />
     <Compile Include="Commands\PlanCommands\UpdatePlanCommand.cs" />
+    <Compile Include="Commands\ProductCommands\CreateProductCommands.cs" />
+    <Compile Include="Commands\ProductCommands\UpdateProductCommands.cs" />
     <Compile Include="Commands\ServiceCommands\CreateServiceCommand.cs" />
     <Compile Include="Commands\ServiceCommands\UpdateServiceCommand.cs" />
     <Compile Include="Commands\SubscriptionCommands\CreateSubscriptionCommand.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Plan.cs" />
+    <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Service.cs" />
     <Compile Include="Entities\Subscription.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +73,7 @@
     <Compile Include="Repositories\ICategoryRepository.cs" />
     <Compile Include="Repositories\ICustomerRepository.cs" />
     <Compile Include="Repositories\IPlanRepository.cs" />
+    <Compile Include="Repositories\IProductRepository.cs" />
     <Compile Include="Repositories\IServiceRepository.cs" />
     <Compile Include="Repositories\ISubscriptionRepository.cs" />
     <Compile Include="Scopes\BrandScope.cs" />
@@ -78,6 +82,7 @@
     <Compile Include="Scopes\PlanScope.cs" />
     <Compile Include="Scopes\BranchScope.cs" />
     <Compile Include="Scopes\CustomerScope.cs" />
+    <Compile Include="Scopes\ProductScope.cs" />
     <Compile Include="Scopes\ServiceScope.cs" />
     <Compile Include="Services\IAddressApplicationService.cs" />
     <Compile Include="Services\IBranchApplicationService.cs" />
@@ -85,6 +90,7 @@
     <Compile Include="Services\ICategoryApplicationService.cs" />
     <Compile Include="Services\ICustomerApplicationService.cs" />
     <Compile Include="Services\IPlanApplicationService.cs" />
+    <Compile Include="Services\IProductApplicationService.cs" />
     <Compile Include="Services\IServiceApplicationService.cs" />
     <Compile Include="Services\ISubscriptionApplicationService.cs" />
     <Compile Include="Shared\Entities\Entity.cs" />
