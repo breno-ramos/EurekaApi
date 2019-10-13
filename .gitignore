@@ -6,3 +6,5 @@ Eureka.Domain.Tests/obj/
 Eureka.Domain.Tests/bin/
 Eureka.SharedKernel/obj/
 Eureka.SharedKernel/bin/
+Eureka.Infra/obj/
+Eureka.Infra/bin/
