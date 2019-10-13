@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eureka.Domain.Tests", "Eure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eureka.SharedKernel", "Eureka.SharedKernel\Eureka.SharedKernel.csproj", "{22698B74-619A-4173-93AD-FF992FA3FEE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eureka.Infra", "Eureka.Infra\Eureka.Infra.csproj", "{D285F735-F4F6-4B23-8B3A-05F54B8573EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +29,15 @@ Global
 		{22698B74-619A-4173-93AD-FF992FA3FEE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22698B74-619A-4173-93AD-FF992FA3FEE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22698B74-619A-4173-93AD-FF992FA3FEE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D285F735-F4F6-4B23-8B3A-05F54B8573EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D285F735-F4F6-4B23-8B3A-05F54B8573EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D285F735-F4F6-4B23-8B3A-05F54B8573EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D285F735-F4F6-4B23-8B3A-05F54B8573EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DAF2471-F108-4D4E-B53E-F6D3447FC91A}
 	EndGlobalSection
 EndGlobal
