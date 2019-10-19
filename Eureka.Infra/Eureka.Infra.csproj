@@ -55,6 +55,7 @@
     <Compile Include="Persistence\Maps\AddressMap.cs" />
     <Compile Include="Persistence\Maps\PlanMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AddressRepository.cs" />
     <Compile Include="Repositories\PlanRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
