@@ -25,6 +25,7 @@ namespace Eureka.Infra.Persistence.DataContexts
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new AddressMap());
+            modelBuilder.Configurations.Add(new PlanMap());
         }
     }
 }
