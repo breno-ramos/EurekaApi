@@ -26,6 +26,7 @@ namespace Eureka.Infra.Persistence.DataContexts
         {
             modelBuilder.Configurations.Add(new AddressMap());
             modelBuilder.Configurations.Add(new PlanMap());
+            modelBuilder.Configurations.Add(new SubscriptionMap());
         }
     }
 }
