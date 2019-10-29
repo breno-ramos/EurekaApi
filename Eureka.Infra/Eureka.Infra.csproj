@@ -55,6 +55,8 @@
     <Compile Include="Persistence\Maps\AddressMap.cs" />
     <Compile Include="Persistence\Maps\BranchMap.cs" />
     <Compile Include="Persistence\Maps\CustomerMap.cs" />
+    <Compile Include="Persistence\Maps\BrandMap.cs" />
+    <Compile Include="Persistence\Maps\CategoryMap.cs" />
     <Compile Include="Persistence\Maps\PlanMap.cs" />
     <Compile Include="Persistence\Maps\ProductMap.cs" />
     <Compile Include="Persistence\Maps\ServiceMap.cs" />
@@ -63,8 +65,10 @@
     <Compile Include="Repositories\AddressRepository.cs" />
     <Compile Include="Repositories\BranchRepository.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
-    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\BrandRepository.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
     <Compile Include="Repositories\PlanRepository.cs" />
+	<Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\ServiceRepository.cs" />
     <Compile Include="Repositories\SubscriptionRepository.cs" />
     <Compile Include="UnitOfWork.cs" />

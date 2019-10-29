@@ -32,6 +32,8 @@ namespace Eureka.Infra.Persistence.DataContexts
             modelBuilder.Configurations.Add(new ProductMap());
             modelBuilder.Configurations.Add(new ServiceMap());
             modelBuilder.Configurations.Add(new SubscriptionMap());
+            modelBuilder.Configurations.Add(new BrandMap());
+            modelBuilder.Configurations.Add(new CategoryMap());
         }
     }
 }
