@@ -4,8 +4,8 @@ namespace Eureka.Domain.Repositories
 {
     public interface IAddressRepository
     {
-        void Create(Address branch);
-        void Update(Address branch);
-        void Delete(Address branch);
+        void Create(Address address);
+        void Update(Address address);
+        void Delete(Address address);
     }
 }

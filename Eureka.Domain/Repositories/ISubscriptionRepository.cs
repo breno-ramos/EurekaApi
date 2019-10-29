@@ -8,9 +8,8 @@ namespace Eureka.Domain.Repositories
     {
         List<Subscription> Get();
         Subscription GetById(Guid id);
-        Subscription GetByCustomer(Guid customerId);
         void Create(Subscription subscription);
         void Update(Subscription subscription);
-        void Delete(Guid id);
+        void Delete(Subscription subscription);
     }
 }

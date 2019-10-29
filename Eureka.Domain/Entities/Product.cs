@@ -8,7 +8,7 @@ namespace Eureka.Domain.Entities
 {
     public class Product: Entity
     {
-        public Product(string name, string description, decimal price, ICollection<string> images, IList<Category> categories, Brand brand)
+        public Product(string name, string description, decimal price, ICollection<string> images, IList<Category> categories, Brand brand, Model model)
         {
             Name = name;
             Description = description;
@@ -19,6 +19,7 @@ namespace Eureka.Domain.Entities
             Images = images;
             Categories = categories;
             Brand = brand;
+            Model = model;
 
             this.ValidName();
             this.ValidPrice();
@@ -26,6 +27,7 @@ namespace Eureka.Domain.Entities
             this.ValidImage();
             this.ValidCategory();
             this.ValidBrand();
+            // todo model valid
         }
 
         public string Name { get; private set; }
@@ -37,7 +39,6 @@ namespace Eureka.Domain.Entities
         public ICollection<string> Images { get; private set; }
         public ICollection<Category> Categories { get; private set; }
         public Brand Brand { get; private set; }
-        // TODO
-        // modelo
+        public Model Model { get; private set; }
     }
 }
