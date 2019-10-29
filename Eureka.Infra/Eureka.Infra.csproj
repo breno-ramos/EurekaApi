@@ -54,12 +54,18 @@
     <Compile Include="Persistence\DataContexts\EurekaDataContext.cs" />
     <Compile Include="Persistence\Maps\AddressMap.cs" />
     <Compile Include="Persistence\Maps\BranchMap.cs" />
+    <Compile Include="Persistence\Maps\CustomerMap.cs" />
     <Compile Include="Persistence\Maps\PlanMap.cs" />
+    <Compile Include="Persistence\Maps\ProductMap.cs" />
+    <Compile Include="Persistence\Maps\ServiceMap.cs" />
     <Compile Include="Persistence\Maps\SubscriptionMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\AddressRepository.cs" />
     <Compile Include="Repositories\BranchRepository.cs" />
+    <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\PlanRepository.cs" />
+    <Compile Include="Repositories\ServiceRepository.cs" />
     <Compile Include="Repositories\SubscriptionRepository.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>

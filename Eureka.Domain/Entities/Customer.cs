@@ -30,9 +30,8 @@ namespace Eureka.Domain.Entities
         public string Password { get; private set; }
         public string Logo { get; private set; }
         public EStatusType Status { get; private set; }
-        //public Atividade Atividade { get; private set; }
-        //public Ramo Ramo { get; private set; }
-        //public Assinatura Assinatura { get; private set; }
-        //public Endereco Endereco { get; private set; }
+        public Branch Branch { get; private set; }
+        public Subscription Subscription { get; private set; }
+        public Address Address { get; private set; }
     }
 }
