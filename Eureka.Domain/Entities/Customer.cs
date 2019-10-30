@@ -7,7 +7,8 @@ namespace Eureka.Domain.Entities
 {
     public class Customer : Entity
     {
-        public Customer(string companyName, CustomerName customerName, Document document, string email, string password, string logo)
+        public Customer(string companyName, CustomerName customerName, Document document, string email, 
+            string password, string logo, Branch branch, Subscription subscription, Address address)
         {
             CompanyName = companyName;
             CustomerName = customerName;
@@ -16,6 +17,9 @@ namespace Eureka.Domain.Entities
             Password = password;
             Logo = logo;
             Status = EStatusType.Active;
+            Branch = branch;
+            Subscription = subscription;
+            Address = address;
 
             this.ValidCompanyName();
             this.ValidEmail();

@@ -1,7 +1,10 @@
-﻿namespace Eureka.Domain.Commands.AddressCommands
+﻿using System;
+
+namespace Eureka.Domain.Commands.AddressCommands
 {
     public class CreateAddressCommand
     {
+        public Guid Id { get; set; }
         public int Number { get; set; }
         public string Street { get; set; }
         public string Neighborhood { get; set; }

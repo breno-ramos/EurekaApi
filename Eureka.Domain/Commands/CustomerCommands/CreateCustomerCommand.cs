@@ -1,4 +1,5 @@
-﻿using Eureka.Domain.Shared.Enums;
+﻿using Eureka.Domain.Entities;
+using Eureka.Domain.Shared.Enums;
 
 namespace Eureka.Domain.Commands.CustomerCommands
 {
@@ -12,5 +13,9 @@ namespace Eureka.Domain.Commands.CustomerCommands
         public string Email { get; set; }
         public string Password { get; set; }
         public string Logo { get; set; }
+
+        public Branch Branch { get; set; }
+        public Subscription Subscription { get; set; }
+        public Address Address { get; set; }
     }
 }
