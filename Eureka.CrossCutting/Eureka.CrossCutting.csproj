@@ -57,6 +57,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Eureka.ApplicationService\Eureka.ApplicationService.csproj">
+      <Project>{5769BCC0-9026-41A5-BF52-D13A91E94DD8}</Project>
+      <Name>Eureka.ApplicationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Eureka.Domain\Eureka.Domain.csproj">
+      <Project>{0BE69113-5795-47D2-ACD9-F311F799FEAA}</Project>
+      <Name>Eureka.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Eureka.Infra\Eureka.Infra.csproj">
       <Project>{D285F735-F4F6-4B23-8B3A-05F54B8573EB}</Project>
       <Name>Eureka.Infra</Name>
