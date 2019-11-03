@@ -10,3 +10,5 @@ Eureka.Infra/obj/
 Eureka.Infra/bin/
 Eureka.ApplicationService/obj/
 Eureka.ApplicationService/bin/
+Eureka.CrossCutting/obj/
+Eureka.CrossCutting/bin/
