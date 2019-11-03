@@ -24,7 +24,7 @@ namespace Eureka.Infra.Persistence.Maps
             Property(x => x.Site)
                 .HasMaxLength(120);
 
-            HasMany(x => x.Pictures);
+            HasMany(x => x.Images);
         }
     }
 }

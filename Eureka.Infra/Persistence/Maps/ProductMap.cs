@@ -1,4 +1,5 @@
 ﻿using Eureka.Domain.Entities;
+using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
 
 namespace Eureka.Infra.Persistence.Maps
