@@ -3,12 +3,15 @@ using Eureka.Domain.Shared.Entities;
 using Eureka.Domain.Shared.Enums;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Eureka.Domain.Entities
 {
-    public class Product: Entity
+    public class Product : Entity
     {
-        public Product(string name, string description, decimal price, ICollection<string> images, IList<Category> categories, Brand brand, Model model)
+        private IList<Image> _images;
+
+        public Product(string name, string description, decimal price, IList<Category> categories, Brand brand, Model model)
         {
             Name = name;
             Description = description;
@@ -16,7 +19,7 @@ namespace Eureka.Domain.Entities
             Status = EStatusType.Active;
             CreationDate = DateTime.Now;
             EndDate = null;
-            Images = images;
+            _images = new List<Image>();
             Categories = categories;
             Brand = brand;
             Model = model;
@@ -36,9 +39,15 @@ namespace Eureka.Domain.Entities
         public EStatusType Status { get; private set; }
         public DateTime CreationDate { get; private set; }
         public DateTime? EndDate { get; private set; }
-        public ICollection<string> Images { get; private set; }
+        public ICollection<Image> Images { get { return _images.ToArray(); } }
         public ICollection<Category> Categories { get; private set; }
         public Brand Brand { get; private set; }
         public Model Model { get; private set; }
+
+        public void AddImages(List<Image> images)
+        {
+            foreach (var image in images)
+                _images.Add(image);
+        }
     }
 }

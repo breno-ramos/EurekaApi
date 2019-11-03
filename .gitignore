@@ -8,6 +8,7 @@ Eureka.SharedKernel/obj/
 Eureka.SharedKernel/bin/
 Eureka.Infra/obj/
 Eureka.Infra/bin/
+Eureka.Infra/Migrations/
 Eureka.ApplicationService/obj/
 Eureka.ApplicationService/bin/
 Eureka.CrossCutting/obj/
