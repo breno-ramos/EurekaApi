@@ -7,7 +7,7 @@ namespace Eureka.Infra.Persistence.DataContexts
     public class EurekaDataContext : DbContext
     {
         public EurekaDataContext()
-            : base("DbEurekaData")
+            : base("DbEurekaConnString")
         {
             Configuration.ProxyCreationEnabled = false;
             Configuration.LazyLoadingEnabled = false;
