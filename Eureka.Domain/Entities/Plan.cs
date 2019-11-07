@@ -7,12 +7,14 @@ namespace Eureka.Domain.Entities
 {
     public class Plan : Entity
     {
-        public Plan(string name, string description, decimal price)
+        public Plan(string name, string description, decimal price, string type, int quantityImages)
         {
             Name = name;
             Description = description;
             Price = price;
             CreateDate = DateTime.Now;
+            Type = type;
+            QuantityImages = quantityImages;
             Status = EStatusType.Active;
 
             this.ValidName();
@@ -24,6 +26,10 @@ namespace Eureka.Domain.Entities
         public string Description { get; private set; }
         public decimal Price { get; private set; }
         public DateTime CreateDate { get; private set; }
+        public int Limit { get; private set; }
+        //TODO: Trocar tipo de propriedade para enumerador
+        public string Type { get; private set; }
+        public int QuantityImages { get; private set; }
         public EStatusType Status { get; private set; }
     }
 }

@@ -8,7 +8,8 @@ namespace Eureka.Domain.Entities
     public class Customer : Entity
     {
         public Customer(string companyName, CustomerName customerName, Document document, string email, 
-            string password, string logo, Branch branch, Subscription subscription, Address address)
+                        string password, string logo, string creditCard, string activity, Branch branch, 
+                        Subscription subscription, Address address)
         {
             CompanyName = companyName;
             CustomerName = customerName;
@@ -16,12 +17,14 @@ namespace Eureka.Domain.Entities
             Email = email;
             Password = password;
             Logo = logo;
+            CreditCard = creditCard;
+            Activity = activity;
             Status = EStatusType.Active;
             Branch = branch;
             Subscription = subscription;
             Address = address;
 
-            this.ValidCompanyName();
+            this.ValidCompanyName();            
             this.ValidEmail();
             this.ValidPassword();
             this.ValidLogo();
@@ -33,6 +36,8 @@ namespace Eureka.Domain.Entities
         public string Email { get; private set; }
         public string Password { get; private set; }
         public string Logo { get; private set; }
+        public string CreditCard { get; private set; }
+        public string Activity { get; private set; }
         public EStatusType Status { get; private set; }
         public Branch Branch { get; private set; }
         public Subscription Subscription { get; private set; }

@@ -51,9 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IUnitOfWork.cs" />
-    <Compile Include="Migrations\201911031557431_inicial.cs" />
-    <Compile Include="Migrations\201911031557431_inicial.designer.cs">
-      <DependentUpon>201911031557431_inicial.cs</DependentUpon>
+    <Compile Include="Migrations\201911050059277_inicial.cs" />
+    <Compile Include="Migrations\201911050059277_inicial.designer.cs">
+      <DependentUpon>201911050059277_inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistence\DataContexts\EurekaDataContext.cs" />
@@ -89,8 +89,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911031557431_inicial.resx">
-      <DependentUpon>201911031557431_inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911050059277_inicial.resx">
+      <DependentUpon>201911050059277_inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
